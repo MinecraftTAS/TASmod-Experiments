@@ -17,7 +17,7 @@ import net.minecraft.util.PacketByteBuf;
 public class ServerTickPacket implements Packet {
 
 	/**
-	 * Creates a new tick packet containing a uuid and the tick count
+	 * Creates a new tick packet containing a uuid of the player
 	 */
 	public ServerTickPacket(UUID uuid) {
 		this.uuid = uuid;

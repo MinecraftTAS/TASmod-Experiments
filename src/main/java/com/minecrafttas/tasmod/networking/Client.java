@@ -80,7 +80,7 @@ public class Client {
 				Client.clientSocket = clientSocket;
 				// Handle the socket
 				CommonHandler.handleSocket(clientSocket, Client.packetsToSend); // this will create a new thread for outstream and use the current thread for instream
-			} catch (EOFException  | SocketException | InterruptedIOException exception) {
+			} catch (EOFException | SocketException | InterruptedIOException exception) {
 				// The custom TASmod client was closed and the end of stream was reached. The socket was shut down properly.
 				TASmod.LOGGER.debug("Custom TASmod client was shutdown");
 			} catch (Exception exception) {
